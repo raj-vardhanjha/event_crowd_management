@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Dashboard - Event Crowd Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">EventFlow</div>
+        <div class="nav-links">
+            <a href="my-events.html">My Events</a>
+            <a href="#upcoming" class="active">Upcoming Events</a>
+            <a href="#ongoing">Ongoing Events</a>
+            <a href="organize-event.html" class="organize-btn">Organize Event</a>
+            <a href="#profile">Profile</a>
+            <a href="index.html" class="logout-btn">Logout</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="dashboard">
+        <section id="myEvents" class="events-section my-events">
+            <h2>My Events</h2>
+            <div class="my-events-grid">
+                <!-- My events will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="upcoming" class="events-section">
+            <h2>Upcoming Events</h2>
+            <div class="events-slider-container">
+                <button class="slider-arrow prev" aria-label="Previous events">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="events-slider">
+                    <!-- Events will be inserted here by JavaScript -->
+                </div>
+                <button class="slider-arrow next" aria-label="Next events">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section id="ongoing" class="events-section">
+            <h2>Ongoing Events</h2>
+            <div class="events-slider-container">
+                <button class="slider-arrow prev" aria-label="Previous events">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="events-slider">
+                    <!-- Events will be inserted here by JavaScript -->
+                </div>
+                <button class="slider-arrow next" aria-label="Next events">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="events.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organize Event - Event Crowd Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="organize-event.css">
+</head>
+<body class="organize-page">
+    <nav class="navbar">
+        <div class="nav-logo">EventFlow</div>
+        <div class="nav-links">
+            <a href="events.html">Back to Events</a>
+        </div>
+    </nav>
+
+    <main class="organize-container">
+        <div class="form-container">
+            <h1>Organize Your Event</h1>
+            <form id="organizeEventForm" class="organize-form">
+                <div class="form-group">
+                    <input type="text" id="eventName" required>
+                    <label for="eventName">Event Name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="organizerName" required>
+                    <label for="organizerName">Your Name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="universityName" required>
+                    <label for="universityName">University/Organization Name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="form-group">
+                    <select id="eventType" required>
+                        <option value="">Select Event Type</option>
+                        <option value="conference">Conference</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="seminar">Seminar</option>
+                        <option value="cultural">Cultural Event</option>
+                        <option value="sports">Sports Event</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <select id="eventMode" required>
+                        <option value="">Select Event Mode</option>
+                        <option value="offline">Offline</option>
+                        <option value="online">Online</option>
+                        <option value="hybrid">Hybrid</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="date" id="eventDate" required>
+                    <label for="eventDate" class="date-label">Event Date</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" id="expectedAttendees" required>
+                    <label for="expectedAttendees">Expected Number of Attendees</label>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="eventDescription" required></textarea>
+                    <label for="eventDescription">Event Description</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="venue" required>
+                    <label for="venue">Venue/Platform (for online events)</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Event</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <h2>Success! 🎉</h2>
+            <p>Your event has been organized successfully!</p>
+            <button id="closePopup" class="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="organize-event.js"></script>
+</body>
+</html>

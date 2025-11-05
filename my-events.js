@@ -23,6 +23,78 @@ const organizedEvents = [
         type: "Conference",
         mode: "Online",
         lastUpdated: "2025-11-05T09:15:00"
+    },
+    {
+        id: 'me3',
+        title: "Music Festival 2026",
+        date: "February 10, 2026",
+        venue: "Central Park Arena",
+        totalCapacity: 2000,
+        registeredCount: 1200,
+        status: "upcoming",
+        type: "Festival",
+        mode: "Offline",
+        lastUpdated: "2025-11-05T11:00:00"
+    },
+    {
+        id: 'me4',
+        title: "Sports Tournament",
+        date: "Currently Active",
+        venue: "Sports Complex",
+        totalCapacity: 1500,
+        registeredCount: 1100,
+        status: "ongoing",
+        type: "Sports",
+        mode: "Offline",
+        lastUpdated: "2025-11-05T12:30:00"
+    },
+    {
+        id: 'me5',
+        title: "Digital Art Exhibition",
+        date: "March 1, 2026",
+        venue: "Modern Art Gallery",
+        totalCapacity: 300,
+        registeredCount: 150,
+        status: "upcoming",
+        type: "Exhibition",
+        mode: "Hybrid",
+        lastUpdated: "2025-11-05T13:45:00"
+    },
+    {
+        id: 'me6',
+        title: "Business Summit 2026",
+        date: "Currently Active",
+        venue: "Convention Center",
+        totalCapacity: 800,
+        registeredCount: 650,
+        status: "ongoing",
+        type: "Summit",
+        mode: "Hybrid",
+        lastUpdated: "2025-11-05T14:20:00"
+    },
+    {
+        id: 'me7',
+        title: "Food & Wine Festival",
+        date: "April 5, 2026",
+        venue: "City Gardens",
+        totalCapacity: 1000,
+        registeredCount: 300,
+        status: "upcoming",
+        type: "Festival",
+        mode: "Offline",
+        lastUpdated: "2025-11-05T15:10:00"
+    },
+    {
+        id: 'me8',
+        title: "Gaming Convention",
+        date: "May 15, 2026",
+        venue: "Tech Hub",
+        totalCapacity: 1200,
+        registeredCount: 200,
+        status: "upcoming",
+        type: "Convention",
+        mode: "Hybrid",
+        lastUpdated: "2025-11-05T16:00:00"
     }
 ];
 

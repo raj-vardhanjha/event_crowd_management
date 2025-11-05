@@ -167,9 +167,11 @@ body {
 
 .event-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     padding: 1rem;
+    width: 98%;
+    margin: 0 auto;
 }
 
 .event-card {
@@ -177,17 +179,24 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .event-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .event-image {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-image {
+    transform: scale(1.05);
 }
 
 .event-details {
@@ -230,6 +239,23 @@ body {
     transition: transform 0.3s ease;
 }
 
+.feature-image {
+    margin: -2rem -2rem 1.5rem -2rem;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-image img {
+    transform: scale(1.05);
+}
+
 .feature-card:hover {
     transform: translateY(-5px);
 }
@@ -238,6 +264,115 @@ body {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
+}
+
+/* Enhanced Feature Cards */
+.feature-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Emergency SOS Styling */
+.feature-card.emergency i {
+    color: #ff4757;
+    animation: pulse 2s infinite;
+}
+
+.sos-demo {
+    background: #ff4757;
+    color: white;
+}
+
+/* Density Indicator Styling */
+.density-indicator {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.density-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.density-fill {
+    height: 100%;
+    width: 45%;
+    background: linear-gradient(90deg, #2ed573, #ff4757);
+    transition: width 0.5s ease;
+}
+
+.density-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Simulation Preview Styling */
+.simulation-preview {
+    margin-top: 1rem;
+    position: relative;
+}
+
+#simulationCanvas {
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Voice Controls Styling */
+.voice-controls {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Demo Buttons */
+.demo-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary-color);
+    color: white;
+}
+
+.demo-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.demo-btn i {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* subtle floating for hero content to give life */

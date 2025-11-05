@@ -3,26 +3,26 @@ const events = [
     {
         title: "Tech Conference 2025",
         date: "December 15, 2025",
-        description: "Join us for the biggest tech conference of the year featuring industry leaders and innovative solutions.",
-        image: "https://source.unsplash.com/random/800x600/?technology"
+        description: "Join us for the biggest tech conference featuring industry leaders and innovative solutions.",
+        image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop"
     },
     {
         title: "Music Festival",
         date: "January 5, 2026",
         description: "Experience an unforgettable night of music with top artists from around the world.",
-        image: "https://source.unsplash.com/random/800x600/?concert"
+        image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&h=600&fit=crop"
     },
     {
         title: "Food & Wine Expo",
         date: "February 20, 2026",
         description: "Discover culinary delights and fine wines from renowned chefs and sommeliers.",
-        image: "https://source.unsplash.com/random/800x600/?food"
+        image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
     },
     {
         title: "Sports Championship",
         date: "March 10, 2026",
         description: "Witness the ultimate showdown of athletic excellence in this prestigious championship.",
-        image: "https://source.unsplash.com/random/800x600/?sports"
+        image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&h=600&fit=crop"
     }
 ];
 

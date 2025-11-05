@@ -49,25 +49,54 @@
     <section id="features" class="features">
         <h2>Why Choose Us</h2>
         <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-users"></i>
-                <h3>Real-time Crowd Monitoring</h3>
-                <p>Track and manage crowd density with advanced analytics</p>
+            <div class="feature-card emergency">
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=300&fit=crop" alt="Emergency SOS System" loading="lazy">
+                </div>
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Emergency SOS System</h3>
+                <p>Instant emergency response system with one-click SOS alerts and direct connection to emergency services</p>
+                <button class="demo-btn sos-demo">Try Demo</button>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-chart-line"></i>
-                <h3>Predictive Analysis</h3>
-                <p>AI-powered crowd prediction for better planning</p>
+            <div class="feature-card density">
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&h=300&fit=crop" alt="Crowd Density Monitoring" loading="lazy">
+                </div>
+                <i class="fas fa-chart-pie"></i>
+                <h3>Real-time Crowd Density</h3>
+                <p>Live heat mapping and density monitoring with AI-powered alerts for overcrowding prevention</p>
+                <div class="density-indicator">
+                    <div class="density-bar">
+                        <div class="density-fill"></div>
+                    </div>
+                    <span class="density-label">Current Density: <span class="density-value">45%</span></span>
+                </div>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Safety First</h3>
-                <p>Ensure attendee safety with smart alerts and monitoring</p>
+            <div class="feature-card simulation">
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500&h=300&fit=crop" alt="Crowd Simulation" loading="lazy">
+                </div>
+                <i class="fas fa-project-diagram"></i>
+                <h3>Live Crowd Simulation</h3>
+                <p>Interactive 3D crowd flow simulation for optimal event planning and real-time adjustments</p>
+                <div class="simulation-preview">
+                    <canvas id="simulationCanvas"></canvas>
+                    <button class="demo-btn sim-demo">View Simulation</button>
+                </div>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-mobile-alt"></i>
-                <h3>Mobile Integration</h3>
-                <p>Seamless mobile experience for organizers and attendees</p>
+            <div class="feature-card voice">
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?w=500&h=300&fit=crop" alt="Voice Announcements System" loading="lazy">
+                </div>
+                <i class="fas fa-bullhorn"></i>
+                <h3>Smart Voice Announcements</h3>
+                <p>AI-powered multilingual voice announcement system for real-time crowd management</p>
+                <div class="voice-controls">
+                    <button class="demo-btn voice-demo">
+                        <i class="fas fa-play"></i>
+                        <span>Play Sample</span>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
